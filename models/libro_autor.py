@@ -14,8 +14,8 @@ class Libro_autor:
     def search_libro_autor(self, data):
         return self.model.get_columns(data)
 
-    def insert_libro_autor(self, libro_autor):
-        return self.model.insert(libro_autor)
+    def insert_libro_autor(self, libro_Autor):
+        return self.model.insert(libro_Autor)
 
     def update_libro_autor(self, id_object, data):
         return self.model.update(id_object, data)
