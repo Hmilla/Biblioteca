@@ -6,7 +6,7 @@ class Connection:
         self.table_name = table_name
         self.db = connect(host='127.0.0.1',
                     user='postgres', 
-                    password='12345678', 
+                    password='123456', 
                     database='Biblioteca')
         self.cursor = self.db.cursor()
 
