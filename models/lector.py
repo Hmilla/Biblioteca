@@ -3,7 +3,7 @@ from connection.conn import Connection
 
 class Lector:
     def __init__(self):
-        self.model = Connection('Lector')
+        self.model = Connection('"Lector"')
 
     def get_lectores(self, order):
         return self.model.get_all(order)
