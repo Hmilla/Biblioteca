@@ -3,7 +3,7 @@ from connection.conn import Connection
 
 class Prestamo:
     def __init__(self):
-        self.model = Connection('Prestamo')
+        self.model = Connection('"Prestamo"')
 
     def get_prestamos(self, order):
         return self.model.get_all(order)
@@ -20,5 +20,5 @@ class Prestamo:
     def update_prestamo(self, id_object, data):
         return self.model.update(id_object, data)
 
-    def delete_nota(self, id_object):
+    def delete_prestamo(self, id_object):
         return self.model.delete(id_object)
