@@ -1,3 +1,4 @@
+from models.libro import Libro
 from models.lector import Lector
 from helpers.menu import Menu
 from helpers.helper import input_data, print_table, question
@@ -39,7 +40,7 @@ class LectorController:
             ==========================
             ''')
             lectores = self.lector.get_lectores('"Id_lector"')
-            print(print_table(lectores, ['"Id_lector"', '"Nombres"', '"Documento"', '"Telefono"']))
+            print(print_table(lectores, ['Id_lector', 'Nombres', 'Documento', 'Telefono']))
             input('\nPresiona una tecla para continuar...')
         except Exception as e:
             print(f'{str(e)}')
@@ -55,7 +56,7 @@ class LectorController:
             lector = self.lector.get_lector({
                 '"Id_lector"': id_lector
             })
-            print(print_table(lector, ['"Id_lector"', '"Nombres"', '"Documento"', '"Telefono"']))
+            print(print_table(lector, ['Id_lector', 'Nombres', 'Documento', 'Telefono']))
 
             if lector:
                 if question('¿Deseas dar mantenimiento al lector?'):
