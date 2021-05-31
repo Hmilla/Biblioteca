@@ -3,7 +3,7 @@ from connection.conn import Connection
 
 class Autor:
     def __init__(self):
-        self.model = Connection('Autor')
+        self.model = Connection('autor')
 
     def get_autores(self, order):
         return self.model.get_all(order)
